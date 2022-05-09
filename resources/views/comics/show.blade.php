@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="container d-flex p-3">
-        <img class="" src="{{ $comic->thumb }}" alt="{{ $comic->title }}">
+        <img class="h-100" src="{{ $comic->thumb }}" alt="{{ $comic->title }}">
         <div class="content ps-2">
             <h3>{{ $comic->title }}</h3>
             <p>{{ $comic->description }}</p>
