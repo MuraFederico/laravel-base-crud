@@ -22,7 +22,7 @@
             <input class="form-control" type="text" placeholder="Search">
           </form>
         </div>
-      </nav>
+    </nav>
 
 </header>
 
