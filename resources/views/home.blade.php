@@ -3,6 +3,6 @@
 @section('title', 'Home')
 
 @section('content')
-    <a href="{{ route('comics.index') }}">COMICS</a>
+Home Bellissima
 @endsection
 
