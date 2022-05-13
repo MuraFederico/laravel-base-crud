@@ -37275,6 +37275,14 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
+var deleteBtnArr = document.querySelectorAll('.delete');
+deleteBtnArr.forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var eleConfirm = this.parentElement.querySelector('.delete-confirm');
+    eleConfirm.classList.toggle('d-none');
+  });
+});
+console.log(deleteBtnArr);
 
 /***/ }),
 

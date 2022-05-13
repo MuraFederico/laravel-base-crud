@@ -13,11 +13,15 @@
             <p>Series: {{ $comic->series }}</p>
             <p>Type: {{ $comic->type }}</p>
             <a class="btn btn-primary" href="{{ route('comics.edit', $comic->id) }}">EDIT</a>
-            <form method="POST" action="{{ route('comics.destroy', $comic->id) }}">
-                @csrf
-                @method('delete')
-                <button class="btn btn-danger">DELETE</button>
-            </form>
+            <button class="btn btn-danger delete">DELETE</button>
+            <div class="delete-confirm d-none">
+                <form method="POST" action="{{ route('comics.destroy', $comic->id) }}">
+                    @csrf
+                    @method('delete')
+                    <button class="btn btn-primary">YES</button>
+                </form>
+                <a class="btn btn-danger" href="{{ url()->current() }}">NO</a>
+            </div>
         </div>
     </div>
 @endsection

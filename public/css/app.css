@@ -10962,3 +10962,13 @@ a.text-dark:focus {
   }
 }
 
+.delete-confirm {
+  padding: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid black;
+}
+
