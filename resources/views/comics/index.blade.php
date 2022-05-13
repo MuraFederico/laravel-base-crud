@@ -18,6 +18,12 @@
                                     <p>Aviable From: {{ $comic->sale_date }}</p>
                                     <p>Series: {{ $comic->series }}</p>
                                     <p>Type: {{ $comic->type }}</p>
+                                    <a class="btn btn-primary" href="{{ route('comics.edit', $comic->id) }}">EDIT</a>
+                                    <form method="POST" action="{{ route('comics.destroy', $comic->id) }}">
+                                        @csrf
+                                        @method('delete')
+                                        <button class="btn btn-danger">DELETE</button>
+                                    </form>
                                 </div>
                             </div>
                         </a>
